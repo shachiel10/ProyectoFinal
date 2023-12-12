@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Ropa de los 80's</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }i{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        p{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 20px;
+            text-align: center;
+        }h3{
+            text-align: center;
+            font-size: 30px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+        }footer{
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+        }
+
+        section {
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #555;
+        }p{
+            margin: 30px;
+        }@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;900&subset=latin&display=swap');
+
+:root {
+	--cream: hsl(38 47% 75%);
+	--black: hsl(20 3% 19%);
+	--red: #ea6962;
+	--orange: #e78a4e;
+	--yellow: #d8a657;
+	--green: #a9b665;
+	--aqua: #89b482;
+	--ff: "Rubik", sans-serif;
+}
+
+html {
+	font-family: var(--ff);
+	font-size: 100%;
+	block-size: 100%;
+	overflow-y: auto;
+	-webkit-overflow-scrolling: touch;
+	text-rendering: optimizeSpeed;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	box-sizing: border-box;
+}
+
+*, *::before, *::after {
+	box-sizing: inherit;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	block-size: 100%;
+	padding: 5vw;
+	background-color: var(--cream);
+	color: var(--black);
+}
+
+div#tituloDP{
+	max-inline-size: 80rem;
+	margin-inline: auto;
+	display: grid;
+	background: linear-gradient(to top, var(--aqua), 
+		var(--aqua) 2rem, 
+		var(--green) 2rem, 
+		var(--green) 4rem,
+		var(--yellow) 4rem,
+		var(--yellow) 6rem,
+		var(--orange) 6rem,
+		var(--orange) 8rem,
+		var(--red) 8rem,
+		var(--red) 10rem,
+		var(--cream) 10rem);
+	box-shadow:
+		0 2.8px 2.2px hsl(20 3% 19% / 0.02),
+		0 6.7px 5.3px hsl(20 3% 19% / 0.028),
+		0 12.5px 10px hsl(20 3% 19% / 0.035),
+		0 22.3px 17.9px hsl(20 3% 19% / 0.042),
+		0 41.8px 33.4px hsl(20 3% 19% / 0.05),
+		0 100px 80px hsl(20 3% 19% / 0.07);
+}
+
+div#tituloDP > * {
+	padding: 1rem;
+}
+
+h1#titulo2DP {
+	align-self: start;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1;
+	letter-spacing: .1em;
+	text-transform: uppercase;
+	display: grid;
+	position: relative;
+	isolation: isolate;
+	background: linear-gradient(to right, var(--black), var(--black) 14rem, var(--yellow) 14rem);
+	color: var(--yellow);
+}h1#titulo2DP span {
+	font-size: 1.5rem;
+	font-weight: 500;
+}h2 {
+	align-self: center;
+	font-size: 1rem;
+	font-weight: 500;
+	line-height: 1;
+	text-transform: uppercase;
+	display: grid;
+	padding-block: 10vh 20vh;
+}h2#titulo3DP span:first-child {
+	font-size: 7.5rem;
+	font-weight: 900;
+}h2#titulo3DP span:last-child {
+	font-size: 1.5rem;
+	max-inline-size: 10ch
+}
+
+h2#titulo3DP + p {
+	align-self: end;
+	font-size: .875rem;
+	font-weight: 500;
+	line-height: 1.1;
+	max-inline-size: 28ch;
+	position: relative;
+	isolation: isolate;
+	background-color: var(--aqua);
+}
+
+h2#titulo3DP + p::before {
+	content: "";
+	position: absolute;
+	width: 4rem;
+	height: 100%;
+	top: 0;
+	left: 14rem;
+	background-color: inherit;
+	clip-path: polygon(0 0, 50% 0, 100% 50%, 50% 100%);
+	z-index: -1;
+}img{
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+}
+    </style>
+</head>
+<body>
+    <div id = "tituloDP">
+        <h1 id ="titulo2DP">Guns N'  <span>Roses</span> </h1>
+        <h2 id = "titulo3DP"><span>"Rock Legends Closet"</span> <span></span></h2>
+        <p><sup></sup></p>
+        </div>
+    
+    
+    <header>
+        <h1>Acerca De</h1>
+    </header>
+
+    <section>
+        <h3>Misión</h3>
+        <img src="img/misi.jpg" alt="">
+        <!-- <p>Nuestra misión es ofrecer a nuestros clientes una experiencia única al revivir la moda y el estilo de los años 80. Buscamos proporcionar prendas auténticas de esa época, combinando calidad y nostalgia para que cada cliente se sienta parte de la vibrante cultura de los 80.</p>-->
+        <p>Nuestra misión es proporcionar a nuestros clientes una experiencia única al ofrecer una selección cuidadosamente curada de ropa inspirada en los artistas que marcaron tendencia en la década de los 80's. Buscamos revivir la esencia y el estilo de esa época dorada.</p> 
+    
+    
+    </section>
+
+    <section>
+        <h3>Visión</h3>
+        <img src="img/visi.jpg" alt="">
+        <!-- <p>Nuestra visión es ser la tienda de referencia para los amantes de la moda de los años 80. Queremos ser reconocidos como un destino donde los clientes puedan encontrar prendas auténticas y accesorios que capturen la esencia de esa década, contribuyendo así a preservar y celebrar la historia de la moda.</p> -->
+        <p>Queremos ser reconocidos como la principal tienda de ropa retro de los 80's, destacando por la calidad de nuestros productos y el compromiso con la autenticidad. Aspiramos a convertirnos en un referente para los amantes de la moda vintage.</p>
+    
+    </section>
+
+    <section>
+        <h3>Objetivo</h3>
+        <img src="img/obj.jpg" alt="">
+        <p>Nuestros objetivos principales incluyen:</p>
+        <ul>
+            <li> Ofrecer prendas de alta calidad que reflejen la estética de los años 80.</li>
+            <li> Colaborar con diseñadores y marcas que compartan nuestra pasión por la nostalgia de esa época.</li>
+            <li> Crear una comunidad en línea donde los aficionados a la moda retro puedan conectarse y compartir su amor por los 80's.</li>
+            <li> Proporcionar un servicio al cliente excepcional y una experiencia de compra fácil y agradable.</li>
+        </ul>
+    </section>
+    <br><br>
+
+    <footer>
+        <p>&copy; 2023 Tu Tienda en Línea</p>
+    </footer>
+
+</body>
+</html>
