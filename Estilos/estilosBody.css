@@ -1,0 +1,43 @@
+/* Body */
+body{
+    background-color: rgb(253, 210, 154);
+}
+/* Tabla con video */
+.tab1 {
+    border-collapse: collapse;
+    width: 100%;
+    background-color: transparent;
+    border: none; /* Esta línea quita el borde de la tabla */
+  }
+  .tab1 td {
+    border: 1px solid #dddddd00;
+    text-align: center;
+    padding: 8px;
+  }
+
+  .tab1 a {
+    text-decoration: none;
+    color: #333;
+  }
+
+  /* Arcoiris */
+  .arcoiris {
+    display: flex;
+    height: 20px;
+    width: 100%; /* Ajusta el ancho según tus necesidades */
+    overflow: hidden;
+  }
+
+  .arcoiris div {
+    flex: 1;
+    height: 100%;
+    /* border-radius: 50%; */
+  }
+
+  .rojo { background-color: #ff7e7e; }
+  .naranja { background-color: #ffb07c; }
+  .amarillo { background-color: #ffe761; }
+  .verde { background-color: #a6e768; }
+  .azul { background-color: #76b3e7; }
+  .violeta { background-color: #c880e7; }
+
